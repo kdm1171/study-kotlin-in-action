@@ -8,4 +8,23 @@ fun main(args: Array<String>) {
     val oldest = persons.maxBy { it.age ?: 0 }
 
     println("oldest person : $oldest")
+
+    val type = "type"
+
+    if(type is String) {
+        println(type.toUpperCase())
+    }
 }
+/*
+
+fun renderPersonList(persons: Collection<Person>) =
+    createHTML().table {
+        for (person in persons) {
+            tr {
+                td { +person.name }
+                td { +person.age }
+            }
+        }
+
+    }
+*/

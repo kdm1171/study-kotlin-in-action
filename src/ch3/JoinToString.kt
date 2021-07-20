@@ -20,6 +20,7 @@ fun main(args: Array<String>) {
 }
 
 
+@JvmOverloads
 fun <T> joinToString(
     collection: Collection<T>,
     separator: String = ", ",

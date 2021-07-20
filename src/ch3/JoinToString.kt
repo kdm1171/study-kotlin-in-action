@@ -7,6 +7,9 @@ fun main(args: Array<String>) {
 
 
     println(joinToString(list, ";", "(", ")"))
+
+
+    println(joinToString(list, separator = " ", prefix = " ", postfix = "."))
 }
 
 

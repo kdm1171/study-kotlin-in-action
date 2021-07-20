@@ -1,4 +1,4 @@
-@file:JvmName("StringFunctinos")
+@file:JvmName("StringFunctions")
 
 package strings
 
@@ -18,3 +18,10 @@ fun <T> joinToString(
     return result.toString()
 }
 
+fun String.lastChar(): Char = this.get(this.length - 1)
+
+
+fun main(args: Array<String>) {
+    val s = "Hello"
+    println(s.lastChar())
+}
